@@ -10,6 +10,7 @@ public class SimpleViewModel {
         setSimpleText(simpleText);
     }
 
+    @NonNull
     public String getSimpleText() {
         return simpleText;
     }
