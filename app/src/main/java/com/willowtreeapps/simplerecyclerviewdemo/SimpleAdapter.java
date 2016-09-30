@@ -3,9 +3,17 @@ package com.willowtreeapps.simplerecyclerviewdemo;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SimpleAdapter extends RecyclerView.Adapter {
 
-    public SimpleAdapter() {
+    private List<SimpleViewModel> models = new ArrayList<>();
+
+    public SimpleAdapter(final List<SimpleViewModel> viewModels) {
+        if (viewModels != null) {
+            this.models.addAll(viewModels);
+        }
     }
 
     @Override
