@@ -30,4 +30,9 @@ public class SimpleAdapter extends RecyclerView.Adapter {
     public int getItemCount() {
         return 0;
     }
+
+    @Override
+    public int getItemViewType(final int position) {
+        return R.layout.item_simple_itemview;
+    }
 }
