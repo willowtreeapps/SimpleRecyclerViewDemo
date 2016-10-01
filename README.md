@@ -1,1 +1,3 @@
-# wt-blog-recyclerview-simple
+# SimpleRecyclerViewDemo
+
+A simple Android application demonstrating how to implement the RecyclerView/Adapter/ViewHolder pattern
