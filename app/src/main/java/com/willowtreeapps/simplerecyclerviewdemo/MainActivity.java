@@ -1,7 +1,7 @@
 package com.willowtreeapps.simplerecyclerviewdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
+    /**
+     * Helper method which will generate a basic ArrayList of 100 items
+     *
+     * @return A List of SimpleViewModels
+     */
     private List<SimpleViewModel> generateSimpleList() {
         List<SimpleViewModel> simpleViewModelList = new ArrayList<>();
 
